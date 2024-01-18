@@ -72,7 +72,7 @@
 
 .right_box input{
     padding-top: 5vh;
-    
+     background-color: transparent;
     border: none;
     font-size: 1.3vw;
     border-bottom: #504A45 solid 2px;
@@ -116,7 +116,7 @@
 .red_rec_left{
     background-color: #FE320A;
     height: 28vh;
-    border: #383532 solid 2px;
+    
 }
 
 .red_cir_left{
@@ -151,7 +151,7 @@
 .red_rec_right{
     background-color: #FE320A;
     height: 28vh;
-    border: #383532 solid 2px;
+    
 }
 
 
