@@ -14,33 +14,64 @@
     <title>Sundown Website</title>
   </head>
   <body>
-
+   
     
     <div class="img_video">
-
-     
-      
       <img src="" alt="" >
       <video autoplay loop muted src=""></video>
     </div>
-    <div id="main-container">
-      <nav>
-        <img src=".\images\Sundown logo.svg" alt="" />
+    <nav>
+      <div class="navbar">
+       <img id="sundown_logo" src=".\images\Sundown logo.svg" alt="" />
+    
+     
+       <div id="next-part">
+         <div class="capsoles navbtn"><a href="">Work</a></div>
+         <div class="capsoles navbtn"><a href="">Studio</a></div>
+         <div  class="capsoles navbtn"><a href="">Contact</a></div>
 
-        <div id="next-part">
-          <div class="capsoles"><a href="">Work</a></div>
-          <div class="capsoles"><a href="">Studio</a></div>
-          <div class="capsoles"><a href="">Contact</a></div>
-        </div>
-      </nav>
+
+         <div class="toggle_button">
+           <button onclick="btnFunction()" class="btn">
+             <i id="cross" class="fa-solid fa-xmark"></i>
+             <i id="bars" class="fa-solid fa-bars"></i> MENU</button>
+         </div>
+
+
+      </div>
+       
+
+
+       </div>
+   </nav>
+   <div  id="toggle_container">
+    <div class="toggle_contain">
+      <h1>Work</h1>
+      <h1>Studio</h1>
+      <h1>Contact</h1>
+    </div>
+   </div>
+    
+    <div id="starting_content">
+      <h1 id="text1">environments</h1>
+      <h1 id="text2">experience</h1>
+      <h1 id="text3">content</h1>
+    </div>
+   <div id="black_film"></div>
+
+    <div id="main-container">
+      
+      
+
       <div id="main">
         <div id="hero">
+
           <section id="heading">
             <div id="head_1">
-              <h3>
+              <h4>
                 Sundown is a multi-disciplinary studio focused on creating
                 unique, end-to-end experiences and environments.
-              </h3>
+              </h4>
             </div>
 
             <div id="head_2">
@@ -126,6 +157,10 @@
           <div id="part_3"></div>
         </div>
 
+
+
+
+
         <section id="page_2">
           <h5>
             <div id="dot"></div>
@@ -136,6 +171,9 @@
                           
                 
                   <div class="product" img_video="./images/sohonyc1.webp"> 
+                    <div class="products_img">
+                      <img src="./images/sohonyc1.webp" alt="">
+                    </div>
                    <div class="overlay"></div>
                     <h1>SOHO NYC</h1>
                 
@@ -148,6 +186,12 @@
             
 
              <div class="product" img_video="./images/Nike_Soho_AMD21_0781_LORES-p-800.webp" >
+
+              <div class="products_img">
+                <img src="./images/Nike_Soho_AMD21_0781_LORES-p-800.webp" alt="">
+              </div>
+
+
                <div class="overlay"></div>
                 <h1>Air Force 12021</h1>
                 <div class="product_discription">
@@ -158,6 +202,10 @@
 
 
              <div class="product" img_video="./videos/product_video_1.mp4">
+
+              <div class="products_img">
+                <video autoplay muted loop src="./videos/product_video_1.mp4" alt="">
+              </div>
               <div class="overlay"></div>
                 <h1>SOHO 2023</h1>
                 <div class="product_discription">
@@ -168,6 +216,11 @@
 
 
              <div class="product" img_video="./images/Nike_HOI_50th_SU22_FL1_5388-p-800.webp">
+
+              <div class="products_img">
+                <img src="./images/Nike_HOI_50th_SU22_FL1_5388-p-800.webp" alt="">
+              </div>
+
               <div class="overlay"></div> 
                 <h1>Makers Studio HOI</h1>
                 <div class="product_discription">
@@ -178,6 +231,13 @@
 
 
              <div class="product" img_video="./videos/product_video_2.mp4">
+
+
+              <div class="products_img">
+                <video autoplay muted loop src="./videos/product_video_2.mp4" alt=""></video>
+              </div>
+
+
               <div class="overlay"></div>
                 <h1>NYFW Popup</h1>
                 <div class="product_discription">
@@ -188,6 +248,12 @@
 
 
              <div class="product" img_video="./images/20Nike_Soho_50th_SU22_FL1_6176-p-800.webp">
+
+              <div class="products_img">
+                <img src="./images/20Nike_Soho_50th_SU22_FL1_6176-p-800.webp" alt="">
+              </div>
+
+
               <div class="overlay"></div>
                 <h1>50th Anniversary</h1>
                 <div class="product_discription">
@@ -198,6 +264,12 @@
 
 
              <div class="product" img_video="./videos/product_video_3.mp4">
+
+              <div class="products_img">
+                <video autoplay muted loop img src="./videos/product_video_3.mp4" alt=""></video>
+              </div>
+
+
               <div class="overlay"></div>
                 <h1>Play New Kidvision</h1>
                 <div class="product_discription">
@@ -359,9 +431,9 @@ WHO WE WORK WITH
       </div>
        <div class="footer_box_1">
         <div class="left_box">
-          <div class="box"><a hre>Work</a></div>
-          <div class="box"><a href="">Studio</a></div>
-          <div class="box"><a href="">Contact</a></div>
+          <div class="box"><a class="hovering" href="">Work</a></div>
+          <div class="box"><a  class="hovering" href="">Studio</a></div>
+          <div class="box"><a  class="hovering" href="">Contact</a></div>
         </div>
 
         <div class="right_box">
