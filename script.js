@@ -233,21 +233,34 @@ var alter = 0;
 function btnFunction() {
     console.log("hello") 
     if (alter == 0) {
-        document.getElementById("cross").display = "block"
-        document.getElementById("bars").display = "none"
+        document.getElementById("cross").style.display = "block"
+        document.getElementById("bars").style.display = "none"
         document.getElementById("sundown_logo").style.opacity = 0;
-        document.getElementById("toggle_container").style.display = "block";
-        document.getElementById("black_film").style.display = "block";
+        document.getElementById("toggle_container").style.top = "10vh";
+        
+        document.getElementById("toggle_container").style.transition = "all ease 3s";
+        
+
+        document.getElementById("black_film").style.top = "0vh";
+        
+        document.getElementById("black_film").style.transition = "all ease 2s";
+
+       
         alter = 1;
     }
     
     else {
-        document.getElementById("cross").display = "none"
-        document.getElementById("bars").display = "block"
-        document.getElementById("black_film").style.display = "none";
+        document.getElementById("cross").style.display = "none"
+        document.getElementById("bars").style.display = "block"
+        document.getElementById("black_film").style.top = "-100vh";
+        
+        document.getElementById("black_film").style.transition = "all ease 2s";
 
+        document.getElementById("toggle_container").style.top = "-30vh";
+        document.getElementById("toggle_container").style.transition = "all ease 3s";
         document.getElementById("sundown_logo").style.opacity = 1;
-        document.getElementById("toggle_container").style.display = "none";
+        document.getElementById("black_film").style.transition = "all ease 2s";
+        
         alter = 0;
     }
     
@@ -285,5 +298,6 @@ setInterval(() => {
 setInterval(() => {
     document.getElementById("starting_content").style.top = "-100vh";
 }, 4000);
+
 
 
