@@ -22,9 +22,6 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-
-
-
 document.querySelectorAll(".product").forEach(function (elem) {
     
     var p = elem.getAttributeNode("img_video").value  
@@ -229,7 +226,64 @@ function function3() {
 
 
 
+// navbar js
 
+var alter = 0;
 
+function btnFunction() {
+    console.log("hello") 
+    if (alter == 0) {
+        document.getElementById("cross").display = "block"
+        document.getElementById("bars").display = "none"
+        document.getElementById("sundown_logo").style.opacity = 0;
+        document.getElementById("toggle_container").style.display = "block";
+        document.getElementById("black_film").style.display = "block";
+        alter = 1;
+    }
+    
+    else {
+        document.getElementById("cross").display = "none"
+        document.getElementById("bars").display = "block"
+        document.getElementById("black_film").style.display = "none";
+
+        document.getElementById("sundown_logo").style.opacity = 1;
+        document.getElementById("toggle_container").style.display = "none";
+        alter = 0;
+    }
+    
+    
+
+}
+
+// setTimeout(() => {
+//     console.log("hello buddy")
+//     document.getElementById("starting_content").style.top = "-100vh";
+// }, 10);
+setInterval(() => {
+    document.getElementById("text1").style.display = "none";
+    document.getElementById("text2").style.display = "block";
+    document.getElementById("text3").style.display = "none";
+}, 1000);
+
+setInterval(() => {
+    document.getElementById("text1").style.display = "none";
+    document.getElementById("text2").style.display = "none";
+    document.getElementById("text3").style.display = "block";
+}, 2000);
+
+setInterval(() => {
+    document.getElementById("text1").style.display = "none";
+    document.getElementById("text2").style.display = "none";
+    document.getElementById("text3").style.display = "none";
+}, 3000);
+setInterval(() => {
+    document.getElementById("text1").style.display = "none";
+    document.getElementById("text2").style.display = "none";
+    document.getElementById("text3").style.display = "none";
+}, 4000);
+
+setInterval(() => {
+    document.getElementById("starting_content").style.top = "-100vh";
+}, 4000);
 
 
