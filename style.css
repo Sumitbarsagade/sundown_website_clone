@@ -5,7 +5,7 @@
 }
 
 #main-container{
-    position: relative;
+    position: absolute;
     max-width: 100vw;
     z-index:10;
     top:0;
@@ -26,27 +26,20 @@
 
 #black_film{
     width: 100vw;
-    display: none;
+    
     background-color: #504a45cf;
     height: 100vh;
     position: absolute;
-    top: 0;
+    top: -100vh;
     z-index: 80;
     transition: all ease-out 3s;
     animation-name: black_film;
-    animation-duration: 0.5s;
+    animation-duration: 3s;
     animation-direction: alternate;
     animation-timing-function: all ease;
 }
 
-@keyframes black_film {
-    from{
-        height:0;
-    }
-    to{
-         height:100vh;
-    }
-}
+
 
 
 
@@ -96,6 +89,7 @@
 }
 
 .left_box{
+    z-index: 10;
     width: max-content;
 }
 .right_box{
@@ -116,9 +110,7 @@
     border-bottom: 2px solid gray;
 }
 
-.hovering:hover {
-    background-color: yellow;
-  }
+
 
 
 .bottom_text{
@@ -228,14 +220,18 @@
     padding:2vw;  
     position: relative; 
 }
+
+
+
+
 /* -----------------navbar start */
 nav{
-    position:absolute;
+    position:sticky;
     top:0;
     max-width: 100vw;
     padding: 2vw 3vw;
     display: flex;
-    z-index:90;
+    z-index:10;
 
     overflow: hidden;
     
@@ -271,16 +267,22 @@ nav .toggle_button{
 
 }
 
-
-
-#toggle_container{
-    display: none;
+#toggle_container{    
+    position: absolute;
+    z-index: 85;
+    top:-30vh;
 }
+
+
 
 .toggle_button .btn{
     border:none;
     font-size: 1.2vw;
     background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1vh;
 }
 #cross{
     display: none;
@@ -943,7 +945,7 @@ to{
     #toggle_container{
 
         position: absolute;
-        top:10vh;
+        top:-30vh;
         left:0;
         max-width: 94vw;
         padding: 2vw 3vw;
@@ -951,26 +953,14 @@ to{
         z-index: 85;
         background-color: #EFEAE3;
         width: 100vw;
-        height: 30vh;
-       
+        height: 30vh;     
         border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px;
-        
-       display: none;
-       animation-name: toggle_container;
-       animation-duration: 0.5s;
-       animation-direction: alternate;
-       animation-timing-function: all ease-out;
+        border-bottom-right-radius: 50px;   
+       /* animation-name: toggle_container; */
+       
     }
 
-    @keyframes toggle_container {
-        from{
-            height:0;
-        }
-        to{
-             height:30vh;
-        }
-    }
+    
 
     #hero{
           
@@ -1105,6 +1095,10 @@ to{
         padding-bottom: 2vh;
         
         
+    }
+
+    #bars{
+        width: max-content;
     }
     
     .product{
