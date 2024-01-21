@@ -342,6 +342,7 @@ nav .toggle_button{
     
     height: 70vh;
     display: flex;
+    padding-top: 15vh;
     align-items: flex-end;
     justify-content: space-between;
     padding-bottom: 10vh;
@@ -380,7 +381,7 @@ nav .toggle_button{
     
     position: absolute;
     left: 69vw;
-    top:65vh;
+    top:85vh;
 }
 
 #element1{
